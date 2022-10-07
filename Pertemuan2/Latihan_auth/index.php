@@ -18,6 +18,6 @@ if(isset($_POST['submit'])){
         window.location="login_page.php"; </script>';
     }
 } else {
-    echo '<script> window.location="login_page.php"; </script>';
+    echo '<script> window.location="landing_page.php"; </script>';
 }
 ?>
