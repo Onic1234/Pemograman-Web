@@ -3,7 +3,7 @@
 $hostname = "localhost";
 $username = "root";
 $password = "";
-$dbname = "test1";
+$dbname = "test";
 $conn = mysqli_connect($hostname,$username,$password,$dbname);
 if (!$conn){
     die("Unable to connect");
