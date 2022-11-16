@@ -6,7 +6,7 @@ if (isset($_POST['submit'])){
     $email = $_POST['email'];
 
     $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
-    date_default_timezone_get('Asia/Jakarta');
+    date_default_timezone_get('Jakarta');
     $created = date("Y-m-d H:i:s");
 
     include_once("config.php");

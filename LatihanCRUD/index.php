@@ -25,7 +25,7 @@ $result = mysqli_query($conn_db, $query);
                 <th>Email</th>
                 <th>Join Date</th>
                 <th>Last Updated</th>
-                <th>Action</th>\
+                <th>Action</th>
             </tr>
         </thead>
         <tbody>
@@ -40,7 +40,7 @@ $result = mysqli_query($conn_db, $query);
                 <td> <?=$customers_data['created']?></td>
                 <td> <?=$customers_data['updated']?></td>
                 <td>
-                    <a href='edit.php?id=<?$customers_data['id']?>'>Edit</a> |
+                    <a href='edit.php?id=<?=$customers_data['id']?>'>Edit</a> |
                     <a href='delete.php?id=<?=$customers_data['id']?>'>Delete</a>
                 </td>
             </tr>
@@ -61,6 +61,7 @@ $result = mysqli_query($conn_db, $query);
                 echo "<script type='text/javascript'>alert('$message');";
                 echo "window.location = 'index.php'</script>";
             }
+            ?>
 
 </body>
 </html>

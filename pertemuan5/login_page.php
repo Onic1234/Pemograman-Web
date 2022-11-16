@@ -27,7 +27,10 @@ if(isset($_SESSION['username'])){
             <input name="password" class="form_login" type="password" />
             <br/>
             <input type="submit" name="submit" class="tombol_login" value="Login"/>
+            <br>
+            
         </form>
+        <a href="register.php">Register</a>
     </div>
 </body>
 </html>
